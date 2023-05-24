@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Let's Chat</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="letschatpage.css">
+
+</head>
+
+<body
+    background="https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg">
+    <div class:"container">
+        <button id="logout_btn" onclick="logout" class="btn btn-danger">Logout</button>
+        <center>
+            <u>
+                <h1 id="h1tag">Let's Chat</h1>
+            </u>
+            <div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
+    </div>
+
+    <div class="input_div_message_page">
+        <br>
+     <label>Send:</label>
+     <input type="text" id="user_msg" class="form-control" placeholder="Enter your messge here">
+     <br>
+     <button onclick="send()" id="btn_send" class="btn btn-primary">SEND</button
+    </div>
+    
+</center>
+    <script src="letschatpage.js"></script>
+</body>
+
+</html>

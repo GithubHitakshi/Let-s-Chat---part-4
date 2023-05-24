@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Let's Chat</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="roompage.css">
+
+</head>
+
+<body
+    background="https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-yellow-tourism-trolley-case-to-chat-with-image_13961.jpg">
+    <button id="logout_btn" onclick="logout()" class="btn btn-danger">LOGOUT</button>
+    <center>
+        <u>
+            <h1>Let's Chat</h1>
+        </u>
+        <h3 class="color_white" id="welcome"></h3>
+        <div id="division">
+            <b>
+                <h2 style="font-style: oblique;">Enter a Room Name</h2>
+            </b>
+
+            `<input type="text" id="roomname" placeholder="Enter Room Name">
+            <button id="add_btn" onclick="addroom()" class="btn btn-danger">ADD</button>
+        </div>
+        <h3 class="color_white">#TRENDINGROOMS</h3>
+		<div id="output"></div>
+    </center>
+
+    <script src="letsChatRoomPage.js"></script>
+
+</body>
+
+</html>
